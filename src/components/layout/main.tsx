@@ -2,7 +2,7 @@
 
 import axiosClient from '@/api/axios-client';
 import { routerDict } from '@/common/constants';
-import { LayoutProps } from '@/models/index';
+import { LayoutProps } from '@/models';
 import { usePathname } from 'next/navigation';
 import { SWRConfig } from 'swr';
 import Auth from '../common/auth';

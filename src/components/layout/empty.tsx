@@ -1,4 +1,4 @@
-import { LayoutProps } from '@/models/index';
+import { LayoutProps } from '@/models';
 
 export const EmptyLayout = ({ children }: LayoutProps) => {
   return (

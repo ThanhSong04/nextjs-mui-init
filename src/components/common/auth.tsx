@@ -1,5 +1,5 @@
 'use client';
-import { useAuth } from '@/hooks/index';
+import { useAuth } from '@/hooks';
 import { useRouter } from 'next/navigation';
 import { ReactNode, useEffect } from 'react';
 
@@ -12,9 +12,9 @@ export default function Auth({ children }: AuthProps) {
   const { profile, isFirstLoading } = useAuth();
 
   useEffect(() => {
-    if (!isFirstLoading && !profile) router.push('/login');
+    // if (!isFirstLoading && !profile) router.push('/login');
   }, [router, profile, isFirstLoading]);
 
-  if (!profile) return <>Loading ...</>;
+  // if (!profile) return <>Loading ...</>;
   return <>{children}</>;
 }

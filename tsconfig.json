@@ -19,12 +19,9 @@
       }
     ],
     "paths": {
-      "@/models/*": ["./src/models/*"],
-      "@/components/*": ["./src/components/*"],
+      "@/*": ["./src/*"],
+      "@/api": ["./src/api-client/index.ts"],
       "@/api/*": ["./src/api-client/*"],
-      "@/hooks/*": ["./src/hooks/*"],
-      "@/common/*": ["./src/common/*"],
-      "@/utils/*": ["./src/utils/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
